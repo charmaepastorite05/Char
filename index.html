@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>My Profile</title>
+    <title>Charmae Pastorite - Profile</title>
     <style>
         body {
             margin: 0;
@@ -9,26 +9,31 @@
             background: linear-gradient(to right, #667eea, #764ba2);
             color: white;
         }
+
         .card {
             width: 350px;
             background: rgba(0,0,0,0.4);
             padding: 30px;
-            margin: 100px auto;
+            margin: 80px auto;
             border-radius: 20px;
             text-align: center;
             box-shadow: 0 0 20px black;
         }
+
         img {
             width: 120px;
             border-radius: 50%;
             border: 3px solid white;
         }
-        h1 {
+
+        h1, h2 {
             margin: 10px 0;
         }
+
         p {
             opacity: 0.9;
         }
+
         button {
             padding: 10px 20px;
             background: #ffcc00;
@@ -37,19 +42,53 @@
             cursor: pointer;
             font-weight: bold;
         }
+
         button:hover {
             background: white;
+        }
+
+        input, textarea {
+            width: 90%;
+            padding: 10px;
+            border-radius: 10px;
+            border: none;
+            margin-bottom: 10px;
+        }
+
+        a {
+            text-decoration: none;
         }
     </style>
 </head>
 <body>
 
+<!-- PROFILE CARD -->
 <div class="card">
-    <img src="IMG_20250516_004308_392.jpg" alt="Profile">
+    <img src="https://i.imgur.com/1X7QYzR.png" alt="Profile">
     <h1>Charmae Pastorite</h1>
     <p>Student | Future Web Developer</p>
     <p>I love technology, creativity, and learning new things.</p>
-    <button>Contact Me</button>
+    <a href="#contact"><button>Contact Me</button></a>
+</div>
+
+<!-- CONTACT SECTION -->
+<div id="09239248103" class="card">
+    <h2>Contact Me</h2>
+
+    <form action="mailto: charmaepastorite94@gmail.com" method="post" enctype="text/plain">
+        <input type="text" name="name" placeholder="Charmae" required>
+        <input type="email" name="email" placeholder="charmaepastorite94@gmail.com" required>
+        <textarea name="message" placeholder="Welcome to my personal profile page! I’m glad you’re here." rows="4" required></textarea>
+        <button type="submit">Send Message</button>
+    </form>
+
+    <p>📧 Email: charmaepastorite94@gmail.com</p>
+    <p>
+        📘 Facebook: 
+        <a href="https://www.facebook.com/share/1HDvnyjsVC/" style="color:yellow;" target="_blank">
+            Visit my profile
+        </a>
+    </p>
 </div>
 
 </body>
